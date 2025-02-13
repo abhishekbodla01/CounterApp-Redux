@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# React-Redux Counter Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive counter application built with React and Redux. This project demonstrates state management using Redux, along with React hooks such as `useSelector`, `useDispatch`, and `useState`. Users can increment, decrement, or reset the counter value, and specify custom increment values through an input field.
 
-Currently, two official plugins are available:
+## Features
+- **Increment/Decrement**: Adjust the counter value by 1.
+- **Reset**: Set the counter back to zero.
+- **Custom Increment**: Input a specific number to increment the counter by a desired value.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **React**: For building the user interface.
+- **Redux**: For state management.
+- **React Hooks**: Including `useSelector`, `useDispatch`, and `useState` for managing component state and side effects.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Clone the Repository:
+```sh
+git clone https://github.com/abhishekbodla01/CounterApp-Redux.git
+cd CounterApp-Redux
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### Install Dependencies:
+```sh
+npm install
 ```
+
+### Start the Application:
+```sh
+npm start
+```
+
+## Usage
+- **Increment/Decrement**: Click the “+” or “-” buttons to adjust the counter.
+- **Reset**: Click the “Reset” button to set the counter to zero.
+- **Custom Increment**: Enter a number in the input field and press the “Increment by Amount” button to increase the counter by the specified value.
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
