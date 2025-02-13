@@ -1,6 +1,7 @@
 # React-Redux Counter Application
 
 A simple and interactive counter application built with React and Redux. This project demonstrates state management using Redux, along with React hooks such as `useSelector`, `useDispatch`, and `useState`. Users can increment, decrement, or reset the counter value, and specify custom increment values through an input field.
+![Screenshot of the Counter](./src/assets/image.png)
 
 ## Features
 - **Increment/Decrement**: Adjust the counter value by 1.
